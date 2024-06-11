@@ -78,6 +78,7 @@ class _Title extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final titleStyle = Theme.of(context).textTheme.titleLarge;
+    final colors = Theme.of(context).colorScheme.primary;
     return Container(
       padding: const EdgeInsets.only(top: 10),
       margin: const EdgeInsets.symmetric(horizontal: 10),
@@ -91,7 +92,10 @@ class _Title extends StatelessWidget {
           const Spacer(),
           if (subTitle != null)
             FilledButton.tonal(
-              style: const ButtonStyle(visualDensity: VisualDensity.compact),
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all<Color>(colors),
+                visualDensity: VisualDensity.compact,
+              ),
               onPressed: () {},
               child: Text(
                 subTitle!,
