@@ -3,7 +3,6 @@ import 'dart:async';
 import 'package:cinemapedia/config/helpers/human_formats.dart';
 import 'package:cinemapedia/domain/entities/movie.dart';
 import 'package:flutter/material.dart';
-// ignore: depend_on_referenced_packages
 import 'package:animate_do/animate_do.dart';
 
 typedef SearchMoviesCallback = Future<List<Movie>> Function(String query);

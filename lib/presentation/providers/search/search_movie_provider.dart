@@ -1,4 +1,3 @@
-// ignore: depend_on_referenced_packages
 import 'package:cinemapedia/domain/entities/movie.dart';
 import 'package:cinemapedia/presentation/providers/movies/movie_repository_provider.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
