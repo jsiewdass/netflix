@@ -1,7 +1,5 @@
-// ignore: depend_on_referenced_packages
 import 'package:cinemapedia/domain/entities/movie.dart';
 import 'package:cinemapedia/presentation/providers/movies/movie_repository_provider.dart';
-// ignore: depend_on_referenced_packages
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 final nowPlayingProvider =
@@ -38,7 +36,6 @@ class MoviesNotifier extends StateNotifier<List<Movie>> {
   Future<void> loadNexPage() async {
     if (isLoading) return;
     isLoading = true;
-    print('loading more movies');
     currentPage++;
     // state.addAll(movies);
     final List<Movie> movies = await fetchMoreMovies(page: currentPage);
