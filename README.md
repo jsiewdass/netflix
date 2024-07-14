@@ -8,3 +8,4 @@ dart run build_runner build
 ```
 4. gestor de bd isar
 https://inspect.isar.dev/3.1.0+1/#/49684/z6aRJz_N6Lw
+
